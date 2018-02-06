@@ -1,7 +1,7 @@
 /**
  * Created by Christian on 06-02-2018.
  */
-//TODO tegn en pyramide med loops i stedet for
+//TODO tegn en pyramide med loops i stedet for nedenstående
 
 //Tegnet i konsollen
 console.log("...A...");
