@@ -3,14 +3,15 @@
  */
 
 let temperature = Number(prompt("Indtast temperaturen:"));
-let sunshine = confirm("Lad solen skinne?")
+let sunshine = confirm("Lad solen skinne?"); //confirm returnerer true eller false;
 
 
-//TODO: Tegn To cirkler som snemandens nederstebolde
+//TODO: Tegn To cirkler som snemandens nederste bolde
 circle(50,300,30); // Sådan kunne den nederste se ud
 
 
 //TODO: Tegn hovedet med face() funktionen:
+
 
 function face(x,y,radius){
     //Vi kan lige så godt bruge vores cirkel funktion til at tegne cirkel om ansigtet
@@ -19,7 +20,7 @@ function face(x,y,radius){
     //TODO: Tegn øjne
 
     //TODO: Tegn glad mund hvis det er rart at være snemand eller sur mund, hvis det er surt.
-    //Funktionen findes allerede - se nederst
+    //Funktionen findes allerede - mouth() - se nederst
 
 }
 
