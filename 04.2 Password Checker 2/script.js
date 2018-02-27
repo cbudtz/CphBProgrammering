@@ -1,0 +1,1 @@
+//TODO omskriv passwordcheckeren fra uge 2 så den skriver til DOM'en i stedet for en alert
