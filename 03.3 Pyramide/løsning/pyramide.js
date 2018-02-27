@@ -3,16 +3,30 @@
  */
 //TODO tegn en pyramide med loops lineNo stedet for nedenstående
 
-//Tegnet lineNo konsollen
-console.log("...A...");
-console.log("..AAA..");
-console.log(".AAAAA.");
-console.log("AAAAAAA");
+
+let pyramidHeight = Number(prompt("Indtast pyramidehøjde"));
+
 //Tegnet lineNo HTML dokumentet
-document.getElementById("pyramide").innerHTML += "...A..." + "<BR>";
-document.getElementById("pyramide").innerHTML += "..AAA.." + "<BR>";
-document.getElementById("pyramide").innerHTML += ".AAAAA." + "<BR>";
-document.getElementById("pyramide").innerHTML += "AAAAAAA" + "<BR>";
+for (let lineNo = 0; lineNo<pyramidHeight; lineNo++){
+    //calculate how many dots and A's we need
+    let noOfDots = pyramidHeight-lineNo-1;
+    let noOfAs= lineNo*2+1;
+    //loop to make a string of dots and As
+    let dotString = "";
+    let aString = "";
+    for (let j = 0;j<noOfDots;j++){
+        dotString+=".";
+    }
+    for (let k=0;k<noOfAs;k++){
+        aString+="A";
+    }
+
+    document.getElementById("pyramide").innerHTML += dotString + aString + dotString + "<BR>";
+}
+
+
+
+
 
 // Hints:
 // 1) Hvis lineNo er linjenummeret og j er det totale antal linjer -
