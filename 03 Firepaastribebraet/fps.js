@@ -5,6 +5,8 @@
 let x = Number(prompt("Hvor skal der være en brik? Indtast X: "));
 let y = Number(prompt("Hvor skal der være en brik? Indtast Y: "));
 
+drawBoardWithPieceAt(x,y);
+
 function drawBoardWithPieceAt(x, y) {
     let canvas = document.getElementById("mycanvas");
     let context = canvas.getContext("2d");
