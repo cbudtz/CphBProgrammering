@@ -30,7 +30,7 @@ function logout() {
     render();
 
 }
-
+//-- render metode til at opdatere VIEW'et
 function render(){
     if (loggedInState === false){
         // Vis Login side og skjul resten
