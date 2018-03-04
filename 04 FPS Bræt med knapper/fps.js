@@ -3,7 +3,7 @@
  */
 let context = document.getElementById("mycanvas").getContext('2d');
 
-let columns = []; //TODO find på en måde at holde styr på brikkerne
+let kolonner = []; //TODO find på en måde at holde styr på brikkerne
 
 drawBoard();
 
@@ -18,7 +18,7 @@ function drawBoard() {
 
 }
 
-//EventHandler for knapperne - colNo svarer til søjlens nummer
+//EventHandler for knapperne - colNo svarer til søjlens nummer - se i index.html
 function col(colNo){
     //TODO - sæt en ny brik i kolonnenummer colNo
 
@@ -27,13 +27,15 @@ function col(colNo){
 
 
 //------Tegne funktioner------
-function drawPieceAt(x, y, color) {
 
+function drawPieceAt(col, row, color) {
+    drawCircle(25+col*53,25+row*53,20, color)
 }
 
 function drawCircle(x, y, r, fill) {
     //Fill the circle if fill is set
     if (fill){
+        debugger;
         context.beginPath();
         context.arc(x,y,r,0,Math.PI*2);
         context.fillStyle = fill;
