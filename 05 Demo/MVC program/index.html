@@ -7,11 +7,14 @@
 </head>
 <!-- VIEW -->
 <body>
+<!-- Vises når brugeren ikke er logget ind -->
 <div id="logindiv">
     <input type="text" id="username" title="username">
     <input type="text" id="password" title="password">
     <button id="login" onclick="login()">Log in</button>
 </div>
+
+<!-- Vises når brugeren er logget ind -->
 <div id="loggedindiv" hidden>
     Velkommen, <span id="usernamediv"></span>. <br>
     Du er nu logget ind

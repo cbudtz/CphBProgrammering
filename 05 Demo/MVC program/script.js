@@ -21,7 +21,7 @@ function login(){
     //Opdatér Brugergrænsefladen
     render();
 }
-
+    //EventHandler for logout();
 function logout() {
     //Opdatér applikationens tilstand
     user = null;
@@ -30,7 +30,7 @@ function logout() {
     render();
 
 }
-//-- render metode til at opdatere VIEW'et
+//-- render fukntion til at opdatere VIEW'et
 function render(){
     if (loggedInState === false){
         // Vis Login side og skjul resten
