@@ -16,7 +16,6 @@ function drawBoard() {
             drawCircle(25+i*53,25+j*53, 20);
         }
     }
-
 }
 
 //TODO
