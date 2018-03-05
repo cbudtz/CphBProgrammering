@@ -3,7 +3,7 @@
  */
 let context = document.getElementById("mycanvas").getContext('2d');
 
-let kolonner = []; //TODO find på en måde at holde styr på brikkerne
+let columns = []; //TODO find på en måde at holde styr på brikkerne - Data model
 
 drawBoard();
 
@@ -19,7 +19,7 @@ function drawBoard() {
 }
 
 //EventHandler for knapperne - colNo svarer til søjlens nummer - se i index.html
-function col(colNo){
+function putPieceInColumnNo(colNo){
     //TODO - sæt en ny brik i kolonnenummer colNo
 
 
