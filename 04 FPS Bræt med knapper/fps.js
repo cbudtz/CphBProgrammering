@@ -3,7 +3,8 @@
  */
 let context = document.getElementById("mycanvas").getContext('2d');
 
-let columns = []; //TODO find på en måde at holde styr på brikkerne - Data model
+//Bonusopgave
+// let columns = [];
 
 drawBoard();
 
@@ -35,7 +36,6 @@ function drawPieceAt(col, row, color) {
 function drawCircle(x, y, r, fill) {
     //Fill the circle if fill is set
     if (fill){
-        debugger;
         context.beginPath();
         context.arc(x,y,r,0,Math.PI*2);
         context.fillStyle = fill;
@@ -45,16 +45,4 @@ function drawCircle(x, y, r, fill) {
         context.arc(x, y, r, 0, Math.PI * 2);
         context.stroke();
     }
-}
-
-
-//------------------
-
-//TODO Implementeres senere...
-function showScore(player1Score, player2Score){
-
-}
-//TODO Implementeres senere...
-function showWinner(playerName){
-
 }
