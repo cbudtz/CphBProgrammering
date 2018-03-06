@@ -21,6 +21,8 @@ function drawBoard() {
 
 //EventHandler for knapperne - colNo svarer til søjlens nummer - se i index.html
 function putPieceInColumnNo(colNo){
+    //Test alert - fjernes efter behov
+    alert("Du trykkede på kolonne: " + colNo);
     //TODO - sæt en ny brik i kolonnenummer colNo
 
 
