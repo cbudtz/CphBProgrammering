@@ -1,0 +1,8 @@
+input: minutter
+
+timer = minutter / 60
+rund timer ned til nærmeste heltal
+forbrugteMinutter = timer * 60
+tilbageværendeMinutter = minutter - forbrugteMinutter
+
+output: timer, tilbageværendeminutter
