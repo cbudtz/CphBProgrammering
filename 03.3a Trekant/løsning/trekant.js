@@ -12,8 +12,13 @@ for (let i = 0; i< height; i++)
         line += "O";
     }
     console.log(line);
-    document.getElementById("pyramide").innerHTML += line + "<BR>";
+    documentLog(line);
 }
 
 // Hint:
 //Antallet af O'er svarer til linjenummeret
+
+
+function documentLog(string){
+    document.getElementById("pyramide").innerHTML += string + "<BR>";
+}
