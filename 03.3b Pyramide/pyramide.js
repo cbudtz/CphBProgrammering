@@ -2,6 +2,7 @@
  * Created by Christian on 06-02-2018.
  */
 //TODO tegn en pyramide med loops lineNo stedet for nedenstående
+let pyramidHeight = Number(prompt("Hvor høj skal pyramiden være?"));
 
 //Tegnet lineNo konsollen
 console.log("...A...");

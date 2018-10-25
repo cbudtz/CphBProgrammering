@@ -4,7 +4,7 @@
 //TODO tegn en pyramide med loops lineNo stedet for nedenstående
 
 
-let pyramidHeight = Number(prompt("Indtast pyramidehøjde"));
+let pyramidHeight = Number(prompt("Hvor høj skal pyramiden være?"));
 
 //Tegnet lineNo HTML dokumentet
 for (let lineNo = 0; lineNo<pyramidHeight; lineNo++){
