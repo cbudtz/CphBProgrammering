@@ -14,7 +14,7 @@ alert("Antl stigninger: " + rises);
 function countRises() {
     //Hint: Hvilket scope har rises?
     let rises = 0;
-    for (let j = 0; j <= temperaturer.length; j++) {
+    for (let j = 0; j <= temperaturer; j++) {
         if (temperatures[j]< temperatures[j+1]){
             rises++;
         }
