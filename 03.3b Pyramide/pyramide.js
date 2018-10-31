@@ -2,17 +2,18 @@
  * Created by Christian on 06-02-2018.
  */
 //TODO tegn en pyramide med loops lineNo stedet for nedenstående
+let pyramidHeight = Number(prompt("Hvor høj skal pyramiden være?"));
 
-//Tegnet lineNo konsollen
+//Tegner en pyramide der er 4 høj i konsollen
 console.log("...A...");
 console.log("..AAA..");
 console.log(".AAAAA.");
 console.log("AAAAAAA");
-//Tegnet lineNo HTML dokumentet
-document.getElementById("pyramide").innerHTML += "...A..." + "<BR>";
-document.getElementById("pyramide").innerHTML += "..AAA.." + "<BR>";
-document.getElementById("pyramide").innerHTML += ".AAAAA." + "<BR>";
-document.getElementById("pyramide").innerHTML += "AAAAAAA" + "<BR>";
+//Tegner en pyramide der er 4 høj på hjemmesiden (Bonus feature)
+documentLog("...A...");
+documentLog("..AAA..");
+documentLog(".AAAAA.");
+documentLog("AAAAAAA");
 
 // Hints:
 // 1) Hvis lineNo er linjenummeret og j er det totale antal linjer -
@@ -23,3 +24,8 @@ document.getElementById("pyramide").innerHTML += "AAAAAAA" + "<BR>";
 // 2) Der er brug for flere loops - nogle inden lineNo hinanden.
 
 // 3) Der er brug for et loop der tager hver linje og flere loops inden lineNo, der tager sig af antallet af prikker og A'er
+
+//Christians hjemmebryggede log-funktion til hjemmsiden
+function documentLog(string){
+    document.getElementById("pyramide").innerHTML += string + "<BR>";
+}

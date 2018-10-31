@@ -6,7 +6,7 @@ let costume = prompt("Skriv din udklædning");
 
 //TODO udtænk det rigtige udtryk.
 if("check udklædning og alder") {
-    console.log("Du må gerne komme ind");
+    alert("Du må gerne komme ind");
 } else {
-    console.log("Du må ikke komme ind");
+    alert("Du må ikke komme ind");
 }

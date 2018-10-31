@@ -4,7 +4,7 @@
 //TODO tegn en pyramide med loops lineNo stedet for nedenstående
 
 
-let pyramidHeight = Number(prompt("Indtast pyramidehøjde"));
+let pyramidHeight = Number(prompt("Hvor høj skal pyramiden være?"));
 
 //Tegnet lineNo HTML dokumentet
 for (let lineNo = 0; lineNo<pyramidHeight; lineNo++){
@@ -21,7 +21,7 @@ for (let lineNo = 0; lineNo<pyramidHeight; lineNo++){
         aString+="A";
     }
 
-    document.getElementById("pyramide").innerHTML += dotString + aString + dotString + "<BR>";
+    documentLog( dotString + aString + dotString);
 }
 
 
@@ -37,3 +37,8 @@ for (let lineNo = 0; lineNo<pyramidHeight; lineNo++){
 // 2) Der er brug for flere loops - nogle inden lineNo hinanden.
 
 // 3) Der er brug for et loop der tager hver linje og flere loops inden lineNo, der tager sig af antallet af prikker og A'er
+
+
+function documentLog(string){
+    document.getElementById("pyramide").innerHTML += string + "<BR>";
+}

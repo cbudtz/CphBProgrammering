@@ -16,8 +16,11 @@ if (regn.toLowerCase() === "ja" || regn.toLowerCase() ==="j"){
 
 let tidspunkt = Number(prompt("Hvad er klokken (i hele timer)"));
 
+if ((solskin && (tidspunkt>=12 && tidspunkt <=15)) || regn) {
 //TODO: Lav logikken! Enten...
-document.write("Du har brug for din paraply!");
-
+    document.write("Du har brug for din paraply!");
+}else {
 //Eller...
-document.write("Du har ikke brug for din paraply!");
+    document.write("Du har ikke brug for din paraply!");
+
+}
