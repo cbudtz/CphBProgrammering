@@ -10,12 +10,37 @@ let column3 = [0,0,0,0,0,0];
 let column4 = [0,0,0,0,0,0];
 let column5 = [0,0,0,0,0,0];
 let column6 = [0,0,0,0,0,0];
-
 let columns = [column0,column1,column2, column3, column4, column5, column6];
-
+let activePlayer = 1;
 
 drawBoard();
 
+
+function checkwinner(activePlayer, no) {
+    let activeCol = columns[no];
+    let inARow1 = 0;
+    for (let i =0;i<activeCol.length; i++){
+        if (activeCol[i]===activePlayer){
+            inARow1++;
+        } else {
+            inARow1=0;
+        }
+        if(inARow1>=4){
+            return true;
+        }
+
+    }
+    return false;
+
+}
+
+function changePlayer() {
+    if (activePlayer===1){
+        activePlayer=2;
+    } else {
+        activePlayer=1;
+    }
+}
 
 function putPieceInColumnNo(no){
     let activeColumn = columns[no];
@@ -29,6 +54,10 @@ function putPieceInColumnNo(no){
         }
     }
     drawPieceAt();
+    if (checkwinner(activePlayer, no)){
+        alert("Der er fundet en vinder: " + activePlayer);
+    }
+    changePlayer();
 }
 
 

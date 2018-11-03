@@ -4,7 +4,14 @@
 let context = document.getElementById("mycanvas").getContext('2d');
 
 //Bonusopgave
-// let columns = [];
+let kol1 = [0,0,0,0,0,0];
+let kol2 = [0,0,0,0,0,0];
+let kol3 = [0,0,0,0,0,0];
+let kol4 = [0,0,0,0,0,0];
+let kol5 = [0,0,0,0,0,0];
+let kol6 = [0,0,0,0,0,0];
+let kol7 = [0,0,0,0,0,0];
+let columns = [kol1, kol2,kol3, kol4, kol5, kol6, kol7];
 
 drawBoard();
 
@@ -24,8 +31,14 @@ function putPieceInColumnNo(colNo){
     //Test alert - fjernes efter behov
     alert("Du trykkede på kolonne: " + colNo);
     //TODO - sæt en ny brik i kolonnenummer colNo
-
-
+    let detRigtigeArray =  columns[colNo];
+    for (let i = 0;i<detRigtigeArray.length;i++){
+        if (detRigtigeArray[i] === 0){
+            detRigtigeArray[i] = 1;
+            drawPieceAt(colNo,detRigtigeArray.length-i-1, "red");
+            i = detRigtigeArray.length;
+        }
+    }
 }
 
 

@@ -1,8 +1,8 @@
 input: badeVand
 numberOfOnes = 0
 inARow = 0
-for (i = 0; i < badeVand.length; i++)
-    if badeVand[i] == 1
+for  hvert element e i badeVand
+    if e == 1
         numberOfOnes++
     else
         if numberOfOnes > inArow
