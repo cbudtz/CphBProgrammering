@@ -1,7 +1,7 @@
 input: badeVand
 numberOfOnes = 0
 inARow = 0
-for  hvert element e i badeVand
+for  hvert element e in badeVand
     if e == 1
         numberOfOnes++
     else
