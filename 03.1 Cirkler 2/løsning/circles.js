@@ -4,12 +4,9 @@
 
 let antalCirkler = Number(prompt("Indtast antal cirkler"));
 
-
-
-for (let i = 0; i<antalCirkler;i++){
+for (let i = 1; i<=antalCirkler;i++){
     drawCircle(25 + i*40, 25 + i*40, i*5);
 }
-
 
 function drawCircle(x, y, r) {
     let ctx = document.getElementById("mycanvas").getContext('2d');
